@@ -1,0 +1,113 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_fees
+  - ask_eligibility
+  - ask_selection
+  - ask_dates
+  - ask_rules
+  - ask_syllabus
+  - ask_outcomes
+  - ask_application
+  - ask_objectives
+  - ask_curriculum
+  - choose
+  - feature
+  - ask_courses
+  # - ask_selection+ask_eligibility
+  # - ask_application+ask_selection
+  # - ask_fees+ask_syllabus
+  # - ask_selection+ask_syllabus
+  # - ask_application+ask_syllabus
+  # - ask_eligibility+ask_syllabus
+
+entities:
+  - course
+  - admin_feature
+  # - admissions
+  - course_feature
+
+slots:
+  course:
+    type: text
+    # auto_fill: True
+  admin_feature:
+    type: text
+  admissions:
+    type: text
+  course_feature:
+    type: text
+
+# forms:
+#   - course_form
+
+actions:
+  - action_admin_feature
+  - action_course_feature
+
+responses:
+  utter_greet:
+  - text: "Hey! How may I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_course:
+  - text: "BCA, BBA-IT, MSC-CA, MSC-SS, MBA-IT"
+
+  utter_ask_course:
+  - text: For which course?
+    buttons:
+    - title: "BCA"
+      payload: 'BCA'
+    - title: "BBA-IT"
+      payload: 'BBA-IT'
+    - title: "MSC-CA"
+      payload: 'MSC-CA'
+    - title: "MSC-SS"
+      payload: 'MSC-SS'
+    - title: "MBA-IT"
+      payload: 'MBA-IT'
+# custom:
+#       payload: dropDown
+#       data:
+#       - label: option1
+#         value: "/inform{'slot_name':'option1'}"
+#       - label: option2
+#         value: "/inform{'slot_name':'option2'}"
+#       - label: option3
+#         value: "/inform{'slot_name':'option3'}"
+  # utter_ask_admissions:
+  # - text: Please select a program:
+  #   buttons:
+  #   - title: "UG admissions"
+  #     payload: '/choose{"admissions": "UG admissions"}'
+  #   - title: "MSC admissions"
+  #     payload: '/choose{"admissions": "MSC admissions"}'
+  #   - title: "MBA_IT admissions"
+  #     payload: '/choose{"admissions": "MBA-IT admissions"}'
+
+  utter_ask:
+  - text: "Can I help you with anything else?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

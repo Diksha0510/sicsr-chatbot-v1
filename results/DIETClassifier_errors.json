@@ -1,0 +1,198 @@
+[
+  {
+    "text": "what is the annual amount of money spent on this course?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 34,
+        "value": "fee structure",
+        "entity": "admin_feature"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "admin_feature",
+        "start": 19,
+        "end": 25,
+        "value": "amount",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "admin_feature",
+        "start": 29,
+        "end": 34,
+        "value": "money",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course_feature",
+        "start": 49,
+        "end": 55,
+        "value": "course",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "admin_feature",
+        "start": 19,
+        "end": 34,
+        "confidence_entity": 0.8055898400704136,
+        "value": "fee structure",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "cost of masters of science in computer applications",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "fee structure",
+        "entity": "admin_feature"
+      },
+      {
+        "start": 8,
+        "end": 51,
+        "value": "MSC-CA",
+        "entity": "course"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "admin_feature",
+        "start": 0,
+        "end": 4,
+        "value": "fee structure",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "course",
+        "start": 5,
+        "end": 51,
+        "value": "of masters of science in computer applications",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "admin_feature",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9682388778949389,
+        "value": "fee structure",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "course",
+        "start": 8,
+        "end": 51,
+        "confidence_entity": 0.919362657646005,
+        "value": "MSC-CA",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "cost of masters of science in system security",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "fee structure",
+        "entity": "admin_feature"
+      },
+      {
+        "start": 8,
+        "end": 45,
+        "value": "MSC-SS",
+        "entity": "course"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "admin_feature",
+        "start": 0,
+        "end": 4,
+        "value": "fee structure",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "course",
+        "start": 5,
+        "end": 45,
+        "value": "of masters of science in system security",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "admin_feature",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9682410203719025,
+        "value": "fee structure",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "course",
+        "start": 8,
+        "end": 45,
+        "confidence_entity": 0.9018759656644725,
+        "value": "MSC-SS",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what are the important dates for the admission process for this college?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 28,
+        "value": "important dates",
+        "entity": "admin_feature"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "admin_feature",
+        "start": 13,
+        "end": 28,
+        "value": "important dates",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "admin_feature",
+        "start": 47,
+        "end": 54,
+        "value": "process",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "admin_feature",
+        "start": 13,
+        "end": 28,
+        "confidence_entity": 0.9256126622897647,
+        "value": "important dates",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]
