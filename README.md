@@ -5,5 +5,5 @@ _A chatbot created for Symbiosis Institute of Computer Studies and Research's we
 * Rasa (`pip install rasa`)
 
 ## Demo Video
-[![Demonstartion](https://img.youtube.com/vi/hT1G2Gj4SGU/0.jpg)](https://www.youtube.com/watch?v=hT1G2Gj4SGU "Rasa Chatbot Demo")
+[![Demonstartion](.templates/gif.gif)](https://www.youtube.com/watch?v=hT1G2Gj4SGU "Rasa Chatbot Demo")
 
