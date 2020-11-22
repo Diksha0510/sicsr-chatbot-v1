@@ -1,1 +1,10 @@
-# sicsr-chatbot-v1
+# SICSR-Chatbot-V1
+_A chatbot created for Symbiosis Institute of Computer Studies and Research's website to help the people visiting the website._
+```
+
+##Dependencies:
+* Rasa (`pip install rasa`)
+
+## Demo Video
+![HomePage Screenshot](./templates/home_page.png)
+
