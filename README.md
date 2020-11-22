@@ -4,6 +4,6 @@ _A chatbot created for Symbiosis Institute of Computer Studies and Research's we
 ## Dependencies:
 * Rasa (`pip install rasa`)
 
-## Demo Video
+## Demo
 [![Demonstartion](./templates/gif.gif)](https://www.youtube.com/watch?v=hT1G2Gj4SGU "Rasa Chatbot Demo")
 
